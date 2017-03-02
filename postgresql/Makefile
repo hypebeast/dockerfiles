@@ -16,6 +16,12 @@ stop:
 start:
 	docker start ${CONTAINER_NAME}
 
+rm:
+	docker rm ${CONTAINER_NAME}
+
+rmi:
+	docker rmi ${IMAGE_NAME}
+
 volume:
 	sudo mkdir -p /usr/local/docker/postgresql
 
